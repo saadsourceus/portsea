@@ -1,0 +1,65 @@
+/* CSS for iframe fixtures  */
+a {color: #333}
+a:hover {color: #aaa;}
+.SectionTitle {display: none;}
+.blockHeading, .othercomps .blockHeading {background: #fff; color: #000; font-weight: normal;margin-bottom:  18px !important;}
+.all-fixture-wrap {background: none; padding: 10px 0px !important;width:  100%;}
+.comppage .fixoptions {background: #111111 !important;/* border-bottom:  2px solid #000; */}
+.compoptions .fixoptions .active, .comppage .fixoptions .active {background: #d43771 !important;border-bottom: none !important;}
+.comppools .fixoptions {background: #d43771 !important;border-bottom: 2px solid #000;/* padding-right: 10px !important; */}
+.fixoptions a {background: none; text-align: center; width: auto;padding-left:  20px !important;padding-right:  20px !important;}
+.fixoptions a:hover {background: #555 !important; }
+.comppools .fixoptions .active {background: #fff !important;border-bottom: 0px solid #000;color: #000 !important;}
+.comppools .fixoptions a {width: 20%;float: right !important;margin-right: 17px !important;color: #ffffff !important;}
+.comppools {margin: -5px 0px 0px 0px !important;}
+
+.match-wrap {
+background: none repeat scroll 0 0 #FFF;
+float: left;
+border-top: 1px solid #9A9A9A;
+border-bottom: 1px solid #9A9A9A;
+border-left: 0px solid #9A9A9A;
+border-right: 0px solid #9A9A9A;
+margin: 6px 0;
+border-radius: 0px;
+overflow: hidden;
+width:  100% !important;
+}
+
+#tabs-content-border.detailed-stats-wrap {background: #000;}
+
+.match-wrap-buffer {background: none !important;}
+
+.stacked-wide .teams-wrap {
+width: 472px;
+}
+
+.ladder-wrap {background: none !important;}
+.printicon {display: none;}
+
+.tableClass th, .sortheader, .sortheader a, .sortheader a:visited, .sortheader a:hover, .tableClass th a, #content .tableClass th a, #nav-wrap, #nav-wrap a, .navcolors, body.mobile-site #header, .h2hdatewrap a, #aj-profile #more-link, #aj-profile #more-link a, #teamhome-top-wrap, #teamhome-roster, #teamhome-last5-wrap h4, #teamhome-next-wrap h4, #teamhome-ladder-wrap .ladder-wrap h4, .adv-title, #predict-content .arrow-wrap, #predict-content .restab h4, body.mobile-site .othercomplist, body.mobile-site #rdlist-select-wrap, body.mobile-site #rdName-wrap, body.mobile-site #rdName-wrap h4, body.mobile-site .round-wrap .match-name, #content .select-fixture ~ a {
+background-color: #000;
+color: #ffffff;
+}
+
+.away-team-score, .home-team-score {
+color: #777;
+}
+
+.ladder-team-col {font-size: 20px !important;}
+.ladder-pos-col {font-weight: bold !important;font-size:  20px !important;}
+
+#statleader-wrap, .statleader-wrap {
+background: none repeat scroll 0 0 #ffffff;
+}
+
+#col-3-content {
+	padding-top: 66px;
+}
+.join-mail-list-wrap {display: none;}
+
+#topadheader {display: block; background: none;}
+#header-wrap {display: none;}
+#nav-wrap-radius {display: none;}
+#footer-wrap, #historybar {display: none;}
+body {background: #fff;}

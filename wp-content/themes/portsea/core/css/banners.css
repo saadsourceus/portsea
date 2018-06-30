@@ -1,0 +1,13 @@
+	.hero-banner {display: none;}
+@media (min-width : 1600px) {
+	#home-rotator-container {position: relative;}
+	.hero-banner {display: block; background: #000; height: 500px; width: 900px; position: relative; z-index: 200;margin: 0 auto -500px;}
+	.left-banner {/* border: 4px solid green; */left: -1050px;}
+	.left-banner img { border-right: 10px solid #000; border-left: 50px solid #000; position:  absolute; right:  0px;}
+	.right-banner {left: 1041px;}
+	.right-banner img {border-right: 50px solid #000; border-left: 10px solid #000; position:  absolute; left:  0px;}
+
+	#asb-premiership-panel h2 {margin-top: 0px !important;;}
+	#where-can-i-play-panel  h2 {margin-top: -10px !important;}
+	#national-teams-panel {padding-top: 5px;}
+}

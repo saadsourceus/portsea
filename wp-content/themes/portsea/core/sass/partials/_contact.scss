@@ -1,0 +1,133 @@
+.box1 span.main-text {
+    position: absolute;
+    
+    color: #fff;
+    font-weight: 400;
+    
+     @include breakpoint(md){
+        top: 38%;
+        left: 15%;
+        font-size: 16px;
+     }
+}
+.box1 span.sub-text {
+    position: absolute;
+    
+    color: #fff;
+    
+    
+    @include breakpoint(md){
+        top: 52%;
+        left: 15%;
+        width: 55%;
+        font-size: 14px;
+    }
+}  
+.box2 span.main-text {
+    position: absolute;
+    
+    color: #fff;
+    font-weight: 400;
+    
+    @include breakpoint(md){
+        top: 38%;
+        left: 10%;
+        font-size: 16px;
+    }
+}
+.box2 span.sub-text {
+    position: absolute;
+    
+    color: #fff;
+   
+    @include breakpoint(md){
+        top: 52%;
+        width: 55%;
+        left: 10%;
+        font-size: 14px;
+    }
+}
+.box3 span.main-text {
+    position: absolute;
+    
+    color: #fff;
+    font-weight: 400;
+    
+    @include breakpoint(md){
+        top: 38%;
+        left: 25%;
+        font-size: 16px;
+    }
+}
+.box3 span.sub-text {
+    position: absolute;
+    
+    color: #fff;
+    
+    @include breakpoint(md){
+        top: 52%;
+        width: 55%;
+        left: 25%;
+        font-size: 14px;
+    }
+}
+.contact-email {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin: 15px 0;
+    color: #ddaa01;
+    font-size:18px;
+    span{border-bottom: 1px solid;}
+    .fa-envelope {
+        font-size:26px;
+    }
+}
+.map-image {
+        background-size: cover;
+    width: 100%;
+    height: 622px;
+    background-position: center;
+}
+.box1 img, .box2 img, .box3 img{
+       visibility: initial;
+ @include breakpoint(xs){
+    visibility: hidden;
+ }
+}
+.box1, .box2, .box3{
+     @include breakpoint(xs){
+    border-bottom:1px solid #fff;
+ }
+  @include breakpoint(sm){
+    width:33.33%;
+    float:left;
+    padding:0;
+  }
+}
+.box1 span.sub-text, .box2 span.sub-text, .box3 span.sub-text {
+     @include breakpoint(xs){
+        top: 43%;
+        left: 13%;
+     }
+     @include breakpoint(sm){
+            top: 52%;
+            left: 13%;
+            font-size: 12px;
+            width: 74%;
+     }
+    
+ }
+.box1 span.main-text, .box2 span.main-text, .box3 span.main-text   {
+      @include breakpoint(xs){
+            font-size: 14px;
+            top: 15%;
+            left: 13%;
+      }
+       @include breakpoint(sm){
+            top: 24%;
+            left: 13%;
+            font-size: 14px;
+     }
+}

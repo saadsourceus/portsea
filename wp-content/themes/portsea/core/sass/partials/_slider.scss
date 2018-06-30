@@ -1,0 +1,384 @@
+#slider-panel .panel-content {
+      @include breakpoint(xs){
+   
+        padding-top: 0;
+       }
+}
+.banner .slick-slider {
+    border: 1px solid #ccc;
+    border-right:none;
+}
+  .widget-wrapper {
+     @include breakpoint(xs){ 
+              
+                text-align:center;
+            }
+    }
+#slider-panel {
+        border-bottom: 4px solid $green;
+        .col-md-3 {
+             @include breakpoint(xs){ 
+                padding: 10px;
+            }
+        }
+    .col-md-9, .col-md-3 { 
+        .widget-wrapper {
+             @include breakpoint(xs){ 
+                background:#fff;
+                text-align:center;
+            }
+        }
+        @include breakpoint(sm){
+            padding:0;
+
+        }
+        @include breakpoint(xs){ 
+            background:$green;
+        }
+    }
+    .buttons-box li a {
+        display: block;
+        -webkit-font-smoothing: antialiased;
+        color: $green;
+        width: 100%;
+        font-family: 'Anton';
+        text-transform: uppercase;
+        @include breakpoint(xs){
+            text-align: left;
+            font-size: 21px;
+            margin-left: 13px;
+        }
+    }
+    .buttons-box li a > span {
+        float: left;
+        width: 85%;
+    }
+    .buttons-box li:hover a {
+        color: #fff;
+    }
+        .buttons-box li:hover {
+           border: solid 1px #1a560c;
+            background: #1a560c;
+    }
+    .buttons-box li
+    {
+        border: solid 1px #dddddd;
+        height: 55px;
+        align-items: center;
+        display: flex;
+         @include breakpoint(lg){
+            font-size: 24px;
+            height: 82px;
+            padding: 10px;
+        }
+        @include breakpoint(md){
+            font-size: 18px;
+            height: 68px;
+            padding: 10px;
+        }
+        @include breakpoint(sm){
+            font-size: 17px;
+            height: 61px;
+            padding: 0px 10px;
+        }
+
+    }
+    .buttons-box {
+        padding: 0;
+        margin: 0;
+        background: #fff;
+    }
+    .panel-content {
+         
+    }
+     .container {
+        @include breakpoint(xs){
+            padding:0;
+        }
+     }
+}
+   
+.tab-menu {
+    padding:0;
+    position:relative;
+    display: inline-block;    width: 100%;
+    li {
+        list-style:none;
+        position:relative;
+        float: left;
+        padding:10px;
+        width:50%;
+        text-align:center;
+        background-color:hsla(0, 0%, 0%, 0.23);
+        margin-top: -5px;
+        a {
+            color: #fff;
+            font-weight: 100;
+            font-family: 'Anton';
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            -webkit-font-smoothing: antialiased;
+            font-size: 16px;
+        }
+
+    }
+   
+    li.active{
+        background-color: #004890;
+    }
+     li.active::after{
+       
+     }
+    li.active::before{
+        
+    }
+}
+.efl-twitter .widget-title{
+    padding: 0px 15px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:'Open Sans',sans-serif;
+    text-transform:none;
+    text-align: left;
+}
+.efl-facebook h3 {
+    padding: 8px 15px;
+    color:#000;
+    font-size:18px;
+    font-weight: 600;margin-bottom:0;
+    font-family:'Open Sans',sans-serif;
+}
+.tabs {
+    padding: 2px 0 0 0;
+}
+.tab-content {
+    display: none;
+    background-color:#fff;
+  //  padding:10px 0;
+    border-radius: 5px 5px 0 0;
+}
+.tab-content.active {
+    display: block;
+}
+.social-tabs {
+     @include breakpoint(xs){ 
+        padding-top: 10px;
+     }
+}
+.banner {
+     ///   background-color: #333;
+        color: #FFF;
+        position: relative;
+        z-index: 0;
+         @include breakpoint(xs){ 
+            padding:0;
+         }
+     //   padding:0;
+            .banner-img {
+            position: relative;
+          
+        }
+    .slick-slide {
+    
+    }
+    .slick-prev {
+          @include breakpoint(xs){ 
+           
+            left:0;
+          }
+    }
+     .slick-next {
+        @include breakpoint(xs){ 
+           
+            right:0;
+          }
+    }
+    .slick-prev, .slick-next {
+        display:none !important;
+        @include breakpoint(xs){ 
+                display: block !important;
+                width: 30px;
+                font-size: 0px;
+                background: #fff;
+                border: none;
+                max-height: 30px;
+                border-radius: 50%;
+                position: absolute;
+                 top:70%;
+        }
+    }
+    .slick-prev:before{
+            content: "\f053";
+            display: block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 16px;
+            color:rgba(0, 0, 0, 0.7);
+            line-height: 26px;
+    }
+    .slick-next:before {
+        content: "\f054";
+        display: block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.7);
+        line-height: 26px;
+    }
+    .slick-next {
+        float:right;
+    }
+    .slick-dots-wrap {
+        background-color: #000;
+
+         @include breakpoint(xs){ 
+             display:none;
+        }
+        @include breakpoint(md){ 
+             display:block;
+        }
+       // box-shadow: 0 8px 15px -2px #BBB;
+    }
+    .slick-dots {
+        list-style: none;
+        padding:0;
+        margin: 0 auto;
+    }
+    .slick-dots li:first-child {
+        border-left:none;
+    }
+    .slick-dots li:last-child {
+        border-right:none;
+    }
+     .slick-dots li {
+        display: table-cell;
+        width: 20%;
+        border:1px solid #fff;
+      
+        //border-width: 0 1px;
+        position: relative;
+       // background-color:#004890;
+       &:hover {
+        background:$green;
+
+       }
+    }
+    .slick-dots a {
+        cursor: pointer;
+        display: block;
+        padding: 14px 13px;
+        min-height: 70px;
+        line-height: 14px;
+        font-size: 12px;
+        font-weight: bold;
+       
+        text-align: left;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+         @include breakpoint(lg){
+            font-size: 12px;
+            padding: 14px 13px;
+            line-height: 14px;
+         }
+         @include breakpoint(md){
+            font-size: 10px;
+            padding: 7px 10px;
+         }
+         @include breakpoint(sm){
+            line-height: 12px;
+            font-size: 10px;
+                padding: 8px;
+         }
+    }
+    .slick-dots a:hover {
+        background-color: $green;
+        color: #FFF;
+    }
+    .slick-dots li.slick-active a{
+        background-color: $green;
+        color: #FFF;
+    }
+    .slick-dots li.slick-active::before {
+        opacity: 1;
+    }
+    .slick-dots li.slick-active::after {
+        opacity: 1;
+        border-width: 0 16px 16px 16px;
+        border-color: transparent transparent #FFF transparent;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        top: -23px;
+        content: "";
+        border-style: solid;
+        position: absolute;
+        bottom: 100%;
+        left: 41%;
+    }
+    .slick-dots li::before {     
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 13px 14px 13px;
+        border-color: transparent transparent $green transparent;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        z-index: 11;
+    }
+    .banner-content {
+        position: absolute;
+        bottom: 0%;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        h2 {
+            font-family:'Anton';
+            font-size:36px;
+            padding:30px;
+            color:#fff;
+            text-transform:uppercase;
+            font-weight:100;
+            @include breakpoint(lg){
+                font-size: 37px;
+                padding: 12px 27px;
+                line-height: 44px;
+                
+             }
+             @include breakpoint(md){
+                font-size: 22px;
+                padding: 17px;
+                letter-spacing: 1px;
+             }
+              @include breakpoint(sm){
+                font-size:22px;
+                padding:16px;
+                letter-spacing: 1px;
+             }
+             @include breakpoint(xs){
+                font-size:20px;
+                width: 80%;
+                margin: 0 auto;
+                padding:15px;
+                letter-spacing: 1px;
+                text-align: center;
+             }
+        }
+    }
+}
+
+.efl-facebook {
+
+    max-height: 496px;
+   overflow-x: scroll;
+}

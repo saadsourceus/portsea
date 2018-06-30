@@ -1,0 +1,223 @@
+@import "partials/mixins";
+@import "partials/nav";
+@import "partials/header";
+@import "partials/common-styles";
+@import "partials/slick";
+@import "partials/slider";
+@import "partials/banner";
+@import "partials/footer";
+@import "partials/home-news";
+@import "partials/sponsors";
+@import "partials/single"; 
+@import "partials/uisearch"; 
+@import "partials/fixture"; 
+@import "partials/suco";
+
+
+@font-face {
+  font-family: 'webfont';
+  src: url('../fonts/webfont.eot?1531711');
+  src: url('../fonts/webfont.eot?1531711#iefix') format('embedded-opentype'),
+       url('../fonts/webfont.woff?1531711') format('woff'),
+       url('../fonts/webfont.ttf?1531711') format('truetype'),
+       url('../fonts/webfont.svg?1531711#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0')
+    format('embedded-opentype'),
+    url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+    url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular')
+    format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+
+// @font-face {
+//   font-family: 'jockey-one Regular';
+//   //src: url('../fonts/opensans_extrabolditalic_macroman/webfont.eot?1531711');
+//   src: url('../fonts/jocket-one-regular/JockeyOne-Regular.ttf') format('truetype');
+     
+      
+       
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'jockey-one';
+//   //src: url('../fonts/opensans_extrabolditalic_macroman/webfont.eot?1531711');
+//   src: url('../fonts/jockey-one/JockeyOne-Regular.otf') format('embedded-opentype'),
+      
+//        url('../fonts/jockey-one/JockeyOne-Regular.ttf') format('truetype');
+     
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'webfont';
+    src: url('../fonts/webfont.svg?1531711#webfont') format('svg');
+  }
+}
+
+
+body {
+  //background: #333333; 
+  font-family: 'Open Sans',sans-serif;
+  @include body-font();
+  font-size:14px;
+  line-height: 20px;
+  overflow-x: hidden;
+}
+
+// .col-1, .col-2 {
+//   float: left;
+//   position: relative;
+//   min-height: 1px;
+// }
+// .col-1 {
+//   @include breakpoint(xs-sm){
+//     width: 100%;
+//   }
+//   @include breakpoint(md){
+//     width: 630px;
+//     margin-right: 0px;
+//     margin-top:10px;
+//     padding: 0 10px;
+//   }
+//   @include breakpoint(lg){
+//     width: 705px;
+//     //margin-right: 100px;
+//   }
+//   .post-type-archive-player & {
+//     padding-top: 15px;
+//   }
+// }
+// .col-2 {
+//   @include breakpoint(xs-sm){
+//     width: 100%;
+//   }
+//   @include breakpoint(md-lg){
+//     width: 300px;
+//   }
+// }
+#nav-container > .container {
+  position: relative;
+  @include breakpoint(xs){
+     //padding:0px;
+    }
+}
+#logo {
+  position: absolute;
+  top: 0;
+  background: url('../images/sabres-logo.png') 0 0 no-repeat;
+  @include breakpoint(xs){
+    width: 217px;
+    left: -5px;
+    background-size: 220px 60px;
+    z-index: 1000;
+  }
+  @include breakpoint(sm){
+    width: 437px;
+    left: -20px;
+    z-index: 1000;
+  }
+  @include breakpoint(md){
+    width: 437px;
+    left: -50px;
+    z-index: 0;
+  }
+  @include breakpoint(lg){
+    width: 437px;
+    left: -40px;
+    z-index: 0;
+  }
+  a {
+    display: block;
+    height: 119px;
+    @include breakpoint(xs){
+      height: 60px; 
+    }
+  }
+}
+
+
+#main-content {
+  //background:#000;
+  @include breakpoint(mini){margin:0; }
+  span.news-date {
+      display: block;
+      float: right;
+      padding-left: 10px;
+      color:#fff;
+  }
+}
+#content-wrap {
+  
+  @include breakpoint(mini){margin:0; }
+}
+#content {
+  //padding-top: 15px;
+  .has-club-logos & {
+    padding-top: 0;
+  }
+}
+#sidebar {
+  // padding-top:15px;
+  padding-bottom:15px;
+  padding-left:0;
+  padding-right:0;
+ 
+  .has-club-logos & {
+    padding-top: 20px;
+  }
+}
+
+.fsp-adv-social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include breakpoint(xs){
+    display: none;  
+  }
+  li {
+    display: inline-block;
+    margin-left: 5px;
+    &.share-title {
+      display: none;
+      .single & {
+        display: inline-block;
+        @include featured-font();
+        position: relative;
+        top: -4px;
+      }
+    }
+    a {
+      font-size: 30px;
+      @include webfont();
+      color: $yellow !important;
+      &:hover {
+        color: $blue !important;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.lower-section {
+  margin-top: 20px;
+}
+
+.title-404 {
+  display: none;
+}

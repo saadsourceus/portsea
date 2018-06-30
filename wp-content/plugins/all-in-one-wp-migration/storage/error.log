@@ -1,0 +1,36 @@
+Jun 21 2018 06:04:11
+{"Number":2,"Message":"unlink(C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\kq7dw1a16d2t\\filemap.list): Resource temporarily unavailable","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Jun 21 2018 06:04:11
+{"Number":2,"Message":"unlink(C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\kq7dw1a16d2t\\localhost-portsea-20180621-060408-783.wpress): Resource temporarily unavailable","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Jun 21 2018 06:04:11
+{"Number":2,"Message":"rmdir(C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\kq7dw1a16d2t): Directory not empty","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":54}
+
+Jun 21 2018 06:11:55
+{"Number":8,"Message":"unserialize(): Error at offset 24 of 17713 bytes","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":60}
+
+Jun 21 2018 06:11:56
+{"Number":8,"Message":"unserialize(): Error at offset 5 of 299 bytes","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":60}
+
+Jun 21 2018 06:11:56
+{"Number":8,"Message":"unserialize(): Error at offset 24 of 22365 bytes","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":60}
+
+Jun 21 2018 06:11:56
+{"Number":8,"Message":"unserialize(): Error at offset 24 of 22365 bytes","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":60}
+
+Jun 21 2018 06:11:56
+{"Number":8,"Message":"unserialize(): Error at offset 5 of 299 bytes","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":60}
+
+Jun 21 2018 06:11:56
+{"Number":8,"Message":"unserialize(): Error at offset 24 of 27448 bytes","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":60}
+
+Jun 21 2018 06:11:56
+{"Number":8,"Message":"unserialize(): Error at offset 5 of 301 bytes","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":60}
+
+Jun 21 2018 06:11:56
+{"Number":8,"Message":"unserialize(): Error at offset 24 of 37474 bytes","File":"C:\\MAMP\\htdocs\\portsea\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":60}
+
+Jun 21 2018 06:12:16
+{"type":2,"message":"call_user_func_array() expects parameter 1 to be a valid callback, function 'register_my_menu' not found or invalid function name","file":"C:\\MAMP\\htdocs\\portsea\\wp-includes\\class-wp-hook.php","line":286}
+

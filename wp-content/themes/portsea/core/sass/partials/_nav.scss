@@ -1,0 +1,742 @@
+
+/* =Header Menu (Primary)
+-------------------------------------------------------------- */
+#nav-container {
+  background:$green;
+  
+  position: relative;
+   @include breakpoint(md){
+    background:$green;
+   }
+    @include breakpoint(sm){
+    background:$green;
+   }
+    @include breakpoint(xs){
+    background:$green;
+    display:none;
+   }  
+  
+.active-parent > a {
+  color:#fff !important;
+}
+  .menu {
+    clear: both;
+    margin: 0 auto;
+    webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+   
+    @include breakpoint(md){
+        margin-top: 12px;
+        margin-bottom: 7px;
+    }
+  }
+
+.sub-menu li a {
+    color:#004990;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 3px;
+    padding-right: 0;
+    padding-bottom: 0;
+    
+    font-family: 'Open Sans',sans-serif;
+    text-transform:none;
+
+     @include breakpoint(md){
+      color:#666;
+      padding-left: 4px !important;
+      font-size: 14px;
+     }
+     @include breakpoint(xs){
+      color: #666;
+      padding-left: 0 !important;
+      font-size: 14px;
+     }
+      @include breakpoint(sm){
+      color: #666;
+      font-weight: 700;
+      padding-left: 0 !important;
+      font-size: 14px;
+     }
+  }
+  .current_page_item a {
+  
+    //opacity: 1 !important;  
+  }
+  .current-menu-ancestor a {
+    opacity: 1 !important;    
+  }
+  .menu a {
+    @include featured-font();
+    color: #fff;
+    font-family:'Anton';
+    font-size: 23px;
+    font-weight: 100;
+    font-weight:100;
+    text-transform:uppercase;
+    border:0;
+    opacity: .4;
+    position:relative;
+     &:hover {
+      color: #fff;
+      background:transparent;
+      opacity: 1;
+    }
+    @include breakpoint(xs){
+      
+      font-size: 18px;
+      letter-spacing: 0px;
+      opacity: 1;
+      //border-bottom: 1px solid darken($blue, 10%);
+    }
+    @include breakpoint(sm){
+     opacity: 1;
+      font-size: 17px;
+      padding:6px 9px;
+      //border-bottom: 1px solid darken($blue, 10%);
+    }
+   
+    @include breakpoint(md){
+      padding: 0 2px;
+      font-size: 18px;
+      
+    }
+     @include breakpoint(lg){
+    
+      font-size: 22px;
+      
+    }
+  }
+.home #nav-container .main-nav li a:hover, .home #nav-container .main-nav .current_page_item a, .home #menu-panel .top-nav li a:hover, .news-title span, .page-title span, .page-title {
+  color:#fff;
+}
+.home #nav-container .main-nav li a:hover {
+  color:#fff !important;
+}
+  .menu ul a {
+    
+    &:hover {
+      color: $green;
+      background:transparent;
+      opacity: 1;
+    }
+  }  
+
+  .menu a:hover {
+   
+  }
+  .menu .menu-item-has-children a:hover {
+    border-color: transparent;
+  }
+
+  .menu > li {
+    position: relative;
+    @include breakpoint(xs){
+      line-height: 40px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    @include breakpoint(sm){
+      line-height: 30px;
+
+    }
+    @include breakpoint(md){
+      padding-right: 16px;
+    
+      padding-left: 0;
+    }
+    @include breakpoint(lg){
+        padding-right: 20px;
+        padding-left: 0;
+        line-height: 27px;
+    }
+ 
+    &:before {
+      right: 0;
+      border-right: 1px solid #ccc;
+    }
+    &:after {
+      left: 0;
+      border-left: 1px solid #fff;
+    }
+    &:first-child:after {
+      display: none;
+    }
+    &:last-child:before {
+      display: none;
+    }
+  }
+
+  .menu li:hover {
+    white-space: normal;
+    z-index: 10000;
+  }
+}  
+
+.menu,
+.menu ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  .sub-menu {
+    @include breakpoint(not-xs){
+      border:1px solid #eee;
+      border-top: none; 
+    }
+  }
+}
+
+ul.menu > li ul.sub-menu {
+ // box-shadow: 0 0 5px rgba(000,000,000,0.5);
+  &:after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 17px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+    }
+ @include breakpoint(sm){
+    margin-top: 7px; 
+    box-shadow: -5px 0 5px -5px #999, 5px 0 5px -5px #999;
+    border-radius: 0 0 5px 5px;
+  }
+  @include breakpoint(md){
+    margin-top: 7px; 
+    padding: 7px 0;
+    box-shadow:-5px 0 5px -5px #999, 5px 0 5px -5px #999; 
+    border-radius: 0 0 5px 5px;
+  }
+  ul.sub-menu {
+    margin-top: 0;
+    border-left: 1px solid darken($blue, 10%);
+
+  }
+
+}
+
+.menu li {
+  border: 0;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 5;
+}
+
+
+.menu li li {
+  float: none;
+}
+
+.menu ul {
+  left: 0;
+  position: absolute;
+  // top: 0;
+  visibility: hidden;
+  z-index: 10;
+  background:#FFF;
+}
+
+.menu li:hover > ul {
+  top: 100%;
+  visibility: visible;
+}
+
+.menu li li:hover > ul {
+  left: 100%;
+  top: 1px;
+}
+
+.menu:after,
+.menu ul:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  @include breakpoint(xs){
+    visibility: hidden;
+  }
+  @include breakpoint(sm){
+    visibility: hidden;
+  }
+  @include breakpoint(md){
+    visibility:inherit ;
+  }
+
+  ///visibility: hidden;
+}
+
+.menu,
+.menu ul {
+  min-height: 0;
+}
+
+.menu ul,
+.menu ul ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a,
+.menu li li a {
+    transition: all .2s ease-in-out;
+  &:hover {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    background: lighten($blue, 15%);
+  }
+  
+}
+
+.menu ul {
+  margin-top: 1px;
+  min-width: 15em;
+  width: auto;
+}
+
+
+
+
+
+.menu .current_page_item a {
+  background: none;
+  background-color: transparent;
+  background-image: none;
+  filter: none;
+}
+
+.menu li li {
+  
+  background-image: none;
+  
+  filter: none;
+  //margin: 0 0 1px 0;
+  width: auto;
+  
+  @include breakpoint(sm){
+  //  height: 44px;
+       background: #FFFFFF;
+    border-bottom: 1px solid #c5c5c5;
+    margin: 0 12px;
+    &:last-child {
+      border-bottom: none;
+      border-radius: 0 0 5px 5px;
+    
+    }
+    &:first-child {
+    
+     
+
+    }
+  }
+}
+
+
+.menu li li a:hover {
+  //background: transparent !important;
+  background-image: none;
+  border: none;
+  filter: none;
+}
+
+.menu li li:hover {
+  // background: #fff !important;
+  filter: none;
+}
+
+.menu ul > li + li {
+  border-top: 0;
+  
+}
+
+.menu li li:hover > ul {
+  left: 100%;
+  top: 0;
+}
+
+.menu > li:first-child > a {
+  border-left: none;
+}
+.menu > li:last-child > a {
+  border-left: none;
+}
+
+
+.main-nav #responsive_current_menu_item, .menu a#responsive_menu_button {
+  @include breakpoint(md){
+    display: none; 
+  }
+   @include breakpoint(xs-sm){
+    display: none; 
+  }
+}
+
+/*.js .main-nav .menu {*/
+/*display: block;*/
+/*}*/
+
+/* =Primary Main Menu IE Fixes
+-------------------------------------------------------------- */
+.ie7 .menu ul {
+  background: url(core/images/ie7-fix.gif) repeat;
+}
+
+.ie7 .menu li li a {
+  min-width: 100%;
+}
+
+// Phone Menu
+@include breakpoint(tablet-portrait){
+
+//   .js .main-nav .menu .menu-item-has-children a:before {
+//     content: "\f138";
+//     font-family: 'FontAwesome';
+//     position: absolute;
+//     right: 20px;
+//     display: block;
+//     font-size: 24px;
+// }
+// .js .main-nav .menu .menu-item-has-children a ul a:before {
+//     content: " ";
+//     font-family: 'FontAwesome';
+//     position: absolute;
+//     right: 20px;
+//     display: block;
+// }
+.js .main-nav .menu li li a::before {
+
+    content: " "!important;
+   // font-family: 'FontAwesome';
+    position: absolute;
+    right: 20px;
+    display: none!Important;
+
+}
+  .js {
+    .sub-header-menu {
+      display: none;
+    }
+
+    .main-nav {
+      position: relative;
+      clear: both;
+      margin: 0 auto;
+
+      @include breakpoint(xs-sm){
+        margin-left: -15px;
+        margin-right: -15px; 
+      }
+      .menu {
+    
+      
+        ul {
+          //margin-top: 1px;
+
+        }
+        li {
+       
+          a {
+            color: #FFF;
+            font-weight: normal;
+            padding: 0 15px;
+            border: none;
+            border-bottom: 1px solid darken($blue, 10%);
+            text-shadow: none;
+            text-align: left;
+            cursor: pointer;
+            display: inherit;
+            @include breakpoint(xs){
+              font-size: 22px;
+               //height: 45px;
+              
+            }
+            @include breakpoint(sm){
+              font-size: 32px;
+               padding: 5px 10px;
+            
+              
+            }
+          }
+        }
+      }
+    }
+
+    .main-nav .menu li.current_page_item,
+    .menu .current_page_item a,
+    .menu .current-menu-item a {
+      //background-color: $blue;
+    }
+
+    .main-nav .menu li li:hover {
+      background: none !important;
+    }
+
+    .main-nav .menu li li a {
+      position: relative;
+      padding: 0 10px 0 30px;
+      text-indent: 15px;
+    }
+
+    .main-nav .menu li li li a {
+      position: relative;
+      padding: 0 10px 0 40px;
+    }
+
+    .main-nav .menu li a:hover,
+    .main-nav .menu li li a:hover {
+      background-image: none;
+      filter: none;
+      //background-color: #fff !important;
+    }
+
+    .main-nav .menu li li a::before {
+      content: '\2013';
+      position: absolute;
+      top: 0px;
+      left: 7px;
+    }
+
+    .main-nav .menu li li li a::before {
+      content: '\2013';
+      position: absolute;
+      top: 0;
+      left: 20px;
+    }
+
+    .main-nav .menu li li li a::after {
+      content: '\2013';
+      position: absolute;
+      top: 0;
+      left: 10px;
+    }
+
+    .main-nav .menu li ul {
+      // position: static;
+      // visibility: visible;
+      // display: none;
+     background-color: #ffffff;
+    }
+
+    .main-nav .menu ul {
+      
+    }
+
+    .main-nav #responsive_current_menu_item {
+      color: #ffffff;
+      font-weight: 700;
+      cursor: pointer;
+    //  height: 110px;
+      width: 195px;
+      background: url('../images/afl-nsw-act-logo.png') left no-repeat;
+      background-size: auto 80%;
+      @include hide-text;
+    }
+
+    .main-nav a#responsive_menu_button {
+      position: absolute;
+      display: block;
+      left: auto;
+      cursor: pointer;
+      color: #fff;
+          display: none;
+       @include breakpoint(xs){
+         top: -68px;
+         right: 22px;
+         height: 30px;
+         line-height: 30px;
+         width: 50px;
+         font-size: 20px;
+       }
+       @include breakpoint(sm){
+         top: -84px;
+         right: 0;
+         height: 60px;
+         line-height: 50px;
+         width: 100px;
+         z-index: 2000;
+       }
+      &:hover {
+        text-decoration: none;
+      }
+      &:after {
+        @include webfont();
+        content: "\68";
+        @include breakpoint(xs){
+          font-size: 34px;
+          //color: #2a6496;
+        }
+        @include breakpoint(sm){
+          font-size: 35px;
+         // color: #2a6496;
+        }
+      }
+    }
+
+    // .main-nav a#responsive_menu_button.responsive-toggle-open {
+    //  background: url('../images/select-icons.png') 0 -46px no-repeat;
+    // }
+  } 
+}
+
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+  float:left;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 3px 6px;
+  background: #aaa;
+  color: #fff;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: $blue;
+}
+.nav > li.disabled > a {
+  color: #777777;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #428bca;
+}
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li > a {
+@include featured-font-400();
+  border-radius: 4px;
+  .triangle {
+    margin-top: 5px;
+  }
+}
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: $blue;
+}
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+.nav:before,
+.nav:after {
+  content: " ";
+  display: table;
+}
+.nav:after {
+  clear: both;
+}
+
+
+.sb-search-open .sb-icon-search:before {
+    content: "\f00d";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+   
+}
+
+.main-nav { float:left;}
+#wprmenu_menu ul li a {
+  font-size: 18px;
+    font-family: 'Anton';
+}
+#wprmenu_menu.left, #wprmenu_menu.right {
+      top: 70px;    position: fixed;    z-index: 99999;
+
+}
+#wprmenu_menu .wprmenu_icon:before, #wprmenu_bar [data-icon]:before {
+  color:#fff;
+}
+#wprmenu_bar {
+  height:70px !important;
+}
+#wprmenu_menu.wprmenu_levels a.wprmenu_parent_item {
+  border-left:none !important;
+}
+.wpr_search .wpr-search-field {
+  background:#352526;
+  border-color:#352526;
+      height: 50px;
+}
+#wprmenu_menu.wprmenu_levels a.wprmenu_parent_item {
+  margin-left:0;
+}
+#wprmenu_menu .wprmenu_icon_par {  padding: 14px; border-left: 1px solid #352526; left: 88%; right:0;}
+#wprmenu_bar .wprmenu_icon {
+  top:14px;
+}
+#wprmenu_bar .bar_logo {
+   height:100%;
+}
+#wprmenu_bar {
+  border-bottom: 3px solid $green;
+}
+#wprmenu_bar, #wprmenu_bar *, #wprmenu_menu {
+      height: 50px;
+      color: #fff;
+      z-index: 9999;
+}
+#wprmenu_menu.wprmenu_levels ul li ul {
+      background: #174b09;
+      padding: 9px 0;
+}
+#wprmenu_menu.wprmenu_levels ul li ul li {
+      border: none;
+}
+#wprmenu_menu ul.sub-menu a {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size:13px;
+    padding: 7px 5px;
+    line-height: 15px;
+}
+.wpr_search { padding:0 !important;}
+
+#wprmenu_menu .wprmenu_icon:before {
+      content: "\f078";
+      font: normal normal normal 14px/1 FontAwesome;
+}
+#wprmenu_menu .wprmenu_par_opened:before {
+      content: "\f077";
+      font: normal normal normal 14px/1 FontAwesome;
+}

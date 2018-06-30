@@ -1,0 +1,281 @@
+.player-profile-container {
+	//background: #000;
+	h1 {
+		@include heading-lg;
+		color: #fff;
+		padding-bottom: 25px;
+		text-align:center;
+	}
+	.slick-prev, .slick-next {
+	    height: 50px;
+	    width: 50px;
+	}
+	.slick-prev:before, [dir="rtl"] .slick-prev:before {
+	    content: "L";
+	}
+	.slick-next:before {
+	    content: 'R';
+	}
+	.slick-prev:before, .slick-next:before {
+	    display: block;
+	    height: 50px;
+	    width: 50px;
+	    //content: 'L';
+	    font-family: "webfont";
+	    font-style: normal;
+	    font-weight: normal;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    font-size: 32px;
+	    line-height: 50px;
+	   // color: #185B9F;
+	}
+	.slick-prev,
+.slick-next {
+		display: block;
+		cursor: pointer;
+		background: #000;
+		color: #fff;
+		padding: 0;
+		border: none;
+		outline: none;
+		opacity: .85;
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		-o-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		z-index: 100;
+		overflow: hidden;
+	}
+	.block-btn .theme-btn {
+		//background: #fed33d;
+		-webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    font-family: 'Rajdhani', sans-serif;
+	    font-weight: 700;
+	    letter-spacing: -1px;
+	    text-transform: uppercase;
+	   // color: #117bd6;
+	    font-size: 32px;
+	    
+	    display: inline-block;
+	    padding: 10px 20px;
+	}
+	.player-profiles {
+			padding: 0;
+			margin: 0;
+			li {
+				position: relative;
+			}
+	}
+	
+	.slick-prev, .slick-next {
+		//background: #fed33d;
+		opacity: 1;
+	}
+	.slick-prev {
+	    @include breakpoint(sm){
+	          left: 0;
+        }
+         @include breakpoint(xs){
+            left: 0;
+        }
+        @include breakpoint(lg){
+            left: 0;
+        }
+	}
+
+	.slick-next {
+	    @include breakpoint(sm){
+	           right: 0;
+        }
+         @include breakpoint(xs){
+            right: 0;
+        }
+        @include breakpoint(lg){
+            right: 0;
+        }
+	}
+
+	.slick-slider {
+		padding: 0;
+	}
+	.slick-slide {
+		width: 214px !important;
+	}
+	.slick-slide img {
+		width: auto;
+		@include breakpoint(xs){
+			opacity: .3;	
+		}
+	}
+	.slick-center {
+		.player-stats {
+			@include breakpoint(xs){
+				opacity: .98;	
+			}
+			@include breakpoint(sm){
+				opacity: .8;	
+			}
+			@include breakpoint(lg){
+				opacity: 0;
+				&:hover {
+					opacity: .8;
+				}
+			}
+		}
+		img {
+			@include breakpoint(xs){
+				opacity: 1;	
+			}
+		}
+	}
+	.player-stats {
+		position: absolute;
+		background: rgba(254, 211, 61, 0.8);
+		display: block;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity .15s ease-in;
+		color: #00549c;
+		@include breakpoint(xs){
+			width: 214px;	
+		}
+		&:hover {
+			opacity: .8;
+		}
+		h4 {
+			//color: #00549c;
+			font-size: 32px;
+			line-height: 28px;
+			text-transform: uppercase;
+			margin: 30px auto 10px;
+			max-width: 80%;
+			font-family: 'Rajdhani', sans-serif;
+		}
+	}
+	.logo-number {
+		background: rgba(#fff, .8);
+		padding: 15px 25px;
+		@include clearfix;
+		img, .player-number {
+			display: inline-block;
+			float: left;
+			width: 65px;
+		}
+		.player-number {
+			@include featured-font;
+			color: #00549c;
+			font-size: 62px;
+			line-height: 70px;
+			margin-left: 5px;
+			text-align: center;
+		}
+	}
+	table {
+		width: 95%;
+		margin: 20px auto;
+		td {
+			text-align: left;
+			padding: 0 3px;
+			&.l-td {
+				text-align: right;
+			}
+		}
+	}
+}
+
+.player-profiles-archive {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+		img {
+			max-width: 100%;
+			height: auto;
+			margin: 0 auto;
+			display: block;
+		}
+		
+	li {
+		display: inline-block;
+		//float: left;
+		@include breakpoint(xs){
+			@include rowMachine(1, 0%);
+			margin-top: 15px;
+		}
+		@include breakpoint(sm){
+			 width: 18%;
+		}
+		@include breakpoint(md){
+			    width: 18%;
+		}
+		@include breakpoint(lg){
+			//@include rowMachine(6, 1%);
+			width:15%;
+		}
+		position: relative;
+	
+		.ppa-link {
+			padding: 5px;
+			///background: #eee;
+			display: block;
+			//height: 550px;
+			&:hover {
+				//background: #ccc;
+			}
+		}
+	}
+	h4 {
+		    margin: 5px 0;
+		    text-align: center;
+		    font-family: 'Jockey One', sans-serif;
+		    font-weight: 100;
+		    font-size: 15px;
+	}
+	.logo-number {
+		margin: 5px 0;
+		img {
+			width: 65px;
+			max-height: 65px;
+			height: auto;
+			width: auto;
+		}
+	}
+	.club-logo, .player-number {
+		width: 50%;
+		display: inline-block;
+		float: left;
+		text-align: center;
+	}
+	.club-logo {
+
+	}
+	.player-number {
+			@include featured-font;
+			color: $dark-blue;
+			font-size: 62px;
+			line-height: 70px;
+		}
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	table {
+		width: 95%;
+		margin: 20px auto;
+		td {
+			text-align: left;
+			padding: 0 3px;
+			font-size: 12px;
+			&.l-td {
+				text-align: right;
+			}
+		}
+	}
+}

@@ -1,0 +1,710 @@
+/* CSS for iframe fixtures  */
+a {color: #333}
+a:hover {color: #aaa;}
+.SectionTitle {display: none;}
+.blockHeading, .othercomps .blockHeading {background: #fff; color: #000; font-weight: normal;margin-bottom:  18px !important;}
+.all-fixture-wrap {background: none; padding: 10px 0px !important;width:  100%;}
+.comppage .fixoptions {background: #111111 !important;/* border-bottom:  2px solid #000; */}
+.compoptions .fixoptions .active, .comppage .fixoptions .active {background: #f6c535 !important;border-bottom: none !important;}
+.comppools .fixoptions {background: #f6c535 !important;border-bottom: 2px solid #000;/* padding-right: 10px !important; */}
+.fixoptions a {background: none; text-align: center; width: auto;padding-left:  20px !important;padding-right:  20px !important;}
+.fixoptions a:hover {background: #555 !important; }
+.comppools .fixoptions .active {background: #fff !important;border-bottom: 0px solid #000;color: #000 !important;}
+.comppools .fixoptions a {width: 20%;float: right !important;margin-right: 17px !important;color: #ffffff !important;}
+.comppools {margin: -5px 0px 0px 0px !important;}
+
+.match-wrap {
+background: none repeat scroll 0 0 #FFF;
+float: left;
+border-top: 1px solid #9A9A9A;
+border-bottom: 1px solid #9A9A9A;
+border-left: 0px solid #9A9A9A;
+border-right: 0px solid #9A9A9A;
+margin: 6px 0;
+border-radius: 0px;
+overflow: hidden;
+width:  100% !important;
+}
+
+#tabs-content-border.detailed-stats-wrap {background: #000;}
+
+.match-wrap-buffer {background: none !important;}
+
+.stacked-wide .teams-wrap {
+width: 472px;
+}
+
+.ladder-wrap {background: none !important;}
+.printicon {display: none;}
+
+.tableClass th, .sortheader, .sortheader a, .sortheader a:visited, .sortheader a:hover, .tableClass th a, #content .tableClass th a, #nav-wrap, #nav-wrap a, .navcolors, body.mobile-site #header, .h2hdatewrap a, #aj-profile #more-link, #aj-profile #more-link a, #teamhome-top-wrap, #teamhome-roster, #teamhome-last5-wrap h4, #teamhome-next-wrap h4, #teamhome-ladder-wrap .ladder-wrap h4, .adv-title, #predict-content .arrow-wrap, #predict-content .restab h4, body.mobile-site .othercomplist, body.mobile-site #rdlist-select-wrap, body.mobile-site #rdName-wrap, body.mobile-site #rdName-wrap h4, body.mobile-site .round-wrap .match-name, #content .select-fixture ~ a {
+background-color: #000;
+color: #ffffff;
+}
+
+.away-team-score, .home-team-score {
+color: #777;
+}
+
+.ladder-team-col {font-size: 20px !important;}
+.ladder-pos-col {font-weight: bold !important;font-size:  20px !important;}
+
+#statleader-wrap, .statleader-wrap {
+background: none repeat scroll 0 0 #ffffff;
+}
+
+#col-3-content {
+	padding-top: 66px;
+}
+.join-mail-list-wrap {display: none;}
+
+#topadheader {display: block; background: none;}
+#header-wrap {display: none;}
+#nav-wrap-radius {display: none;}
+#footer-wrap, #historybar {display: none;}
+body {background: #fff;}
+
+
+@font-face {
+  font-family: "aggro-font-1";
+  src:url("http://fspdev.com/aggro2.eot");
+  src:url("http://fspdev.com/aggro2.eot?#iefix") format("embedded-opentype"),
+    url("http://fspdev.com/aggro2.ttf") format("truetype"),
+    url("http://fspdev.com/aggro2.svg#aggro2") format("svg"),
+    url("http://fspdev.com/aggro2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.igVideo .aggroPic:after{
+	content: "V";
+	font-family: aggro-font-1;
+	color: rgba(255,255,255,0.7);
+	font-size: 45px;
+	top: -40px;
+	position: relative;
+	left: 7px;
+	float: left;
+	margin-right: -50px;
+}
+.aggroText {line-height: 140%;}
+.aggroBlocked {background: #ffcccc !important; border: 2px solid #FF7777 !important;}
+.aggroAdmin {
+	cursor: pointer;
+	padding: 3px;
+	background: #333;
+	color: #fff !important;
+	font-family: sans-serif;
+	font-size: 12px !important;
+	font-weight: bold;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;	
+}
+
+.rssSingle .aggroProfileImage {display: none;}
+.rssSingle .aggroProfile a span {margin-top: 0px; margin-left: 5px;}
+
+#infscr-loading {
+	bottom: -10px;
+	background: #444;
+	text-align: center;
+	color: #fff;
+	padding: 25px;
+    position:fixed;
+    z-index: 100;  
+    bottom:10%;  
+    left:50%;  
+    margin:0px 0 0 -150px;  
+    width:300px;  
+    height:120px; 
+}
+
+#lightbox {
+	position: static;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 40%;
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	z-index: 1001;
+	display: none;
+	-webkit-border-radius: 5px;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-topleft: 0;
+	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 0;
+
+}
+#lightbox-shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.8);
+	z-index: 1000;
+	display: none;
+		overflow-x:scroll; 
+}
+#lightbox-closer {
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	background: #ffffff;
+	margin-top: 5%;
+	margin-left: 19%;
+	margin-right: auto;
+	left: 50%;
+	cursor: pointer;
+	font-family: aggro-font-1;
+	content: "x"; 
+	font-size: 35px;
+	line-height: 60px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#lightbox-closer:before {
+  content: "x";
+  padding-left: 13px;
+}
+#lightbox .aggroPic {
+	padding: 10px;
+	text-align: center;
+}
+
+#lightbox .aggroPic img {
+	max-width: 100%;
+}
+
+#lightbox .aggroProfile {
+	margin-bottom: 15px;
+}
+
+#lightbox .aggroProfile a {
+	display: block;
+}
+
+#lightbox .aggroProfileImage {
+	height: 60px;
+	width: 60px;
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+	
+#lightbox .aggroProfile span {
+	margin-left: 85px;
+	font-size: 28px;
+	margin-top: -45px;
+}	
+#lightbox .aggroProfile span.screen-name {
+	margin-left: 85px;
+	font-size: 15px;
+	margin-top: -4px;
+	color: #aaa;
+	margin-bottom: -18px;
+}
+#lightbox .rssSingle .aggroProfile span {
+	margin-left: 5px;
+	font-size: 28px;
+	margin-top: 5px;
+}	
+#lightbox .rssSingle .aggroProfile span.screen-name {
+	margin-left: 5px;
+	font-size: 15px;
+	margin-top: -4px;
+	color: #aaa;
+	margin-bottom: -18px;
+}
+#lightbox .aggroProfile span.screen-name:before {
+  font-family: "aggro-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  font-size: 18px;
+  margin-top: 4px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+.aggro-view-post {
+	float: left;
+	padding: 0px 10px !important;
+}
+.aggro-view-post:hover {
+	color: #333 !important;
+}
+.aggro-view-post:before {
+    content: "+ "; 
+    color: #333;
+	margin-left: 20px ;
+    font-family: "aggro-font-1" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ 
+ 
+.twSingle .aggroProfile span.screen-name:before {
+   content: "t "; 
+   color: #00ACED;
+} 
+
+.fbSingle .aggroProfile span.screen-name:before {
+   content: "f "; 
+   color: #3B5998;
+} 
+ 
+.igSingle .aggroProfile span.screen-name:before {
+   content: "i "; 
+   color: #675144;
+} 
+
+.gpSingle .aggroProfile span.screen-name:before {
+   content: "G "; 
+   color: #dd4b39;
+} 
+ 
+.ytSingle .aggroProfile span.screen-name:before {
+   content: "Y "; 
+   color: #C4302B;
+} 
+
+.ytplSingle .aggroProfile span.screen-name:before {
+   content: "Y "; 
+   color: #C4302B;
+} 
+
+.rssSingle .aggroProfile span.screen-name:before {
+    content: "r"; 
+    color: #ff6600;
+	padding-right: 5px;
+} 
+
+.rssSingle .aggroProfile span.screen-name {
+    content: "website"; 
+} 
+
+#lightbox .aggroProfile a{
+	color: #222;
+}
+
+#lightbox .aggroProfile a:hover {
+	color: #555;
+}	
+
+#lightbox .aggroText {
+	padding: 15px 31px;
+	display: block;
+	max-height: none;
+	overflow: hidden;
+	font-size: 25px;
+	line-height: 32px;
+}
+
+#lightbox .aggroText a {
+	color: #333;
+	font-weight: bold;
+}
+#lightbox .aggroText iframe {
+	width: 113%;
+	margin-left: -6%;
+	margin-bottom: 6%;
+	margin-top: -4px;
+}
+
+#lightbox .aggroText video {
+	width: 113%;
+	margin-left: -6%;
+	margin-bottom: 6%;
+	margin-top: -20px;
+}
+#lightbox .aggroDate {
+	padding-bottom: 40px;
+}
+#lightbox .aggroDate a {
+	padding: 10px 20px;
+}
+
+#lightbox .ytSingle .aggroPic, #lightbox .ytplSingle .aggroPic {
+	display: none;
+}
+
+/* Aggro Count Buttons */
+.aggro_count {font-size: 17px;color: #fff !important; padding: 5px 15px 15px; margin: 0px 3px;font-family: sans-serif; font-weight: normal; white-space:nowrap; float: left; margin-bottom: 5px}
+.aggro_count .aggro_name {display: none;}
+.aggro_count:hover {text-decoration: none !important;}
+.aggro_count .aggro_count_total {font-weight: bold; margin-right: 4px;}
+.aggro_count .aggro_count_total:before {
+    content: "+ "; 
+    color: #fff;
+    font-family: "aggro-font-1" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-size: 34px;
+	top: 7px;
+	position: relative;
+}
+ 
+.aggro_count_twitter {
+   background: #00ACED;
+} 
+ 
+.aggro_count_twitter .aggro_count_total:before {
+   content: "t "; 
+} 
+
+.aggro_count_facebook {
+   background: #3B5998;
+} 
+
+.aggro_count_facebook .aggro_count_total:before {
+   content: "F "; 
+} 
+ 
+.aggro_count_instagram {
+   background: #675144;
+} 
+
+.aggro_count_instagram .aggro_count_total:before {
+   content: "i "; 
+} 
+.aggro_count_youtube {
+   background: #C4302B;
+} 
+ 
+.aggro_count_youtube .aggro_count_total:before {
+   content: "y "; 
+} 
+.aggro_count_googleplus .aggro_count_total:before {
+   content: "g "; }
+.aggro_count_googleplus {
+   background: #dd4b39;
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	#lightbox {
+		width: 80%;
+		margin-top: 10%;
+	}
+	#lightbox-closer {
+		margin-left: 36%;
+		margin-top: 10%;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	#lightbox {
+		width: 80%;
+		margin-top: 10%;
+	}
+	#lightbox-closer {
+		margin-left: 30%;
+		margin-top: 10%;
+	}
+	#lightbox .aggroText {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	#lightbox .aggroProfileImage {
+		height: 30px;
+		width: 30px;
+		margin-right: 10px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	
+	#lightbox .aggroProfile span {
+		margin-left: 45px;
+		font-size: 18px;
+		margin-top: -25px;
+	}
+	#lightbox .aggroProfile span.screen-name {
+		margin-left: 45px;
+		font-size: 13px;
+		margin-top: -8px;
+	}
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	#lightbox {
+		width: 80%;
+	}
+	#lightbox-closer {
+		margin-left: 30%;
+	}
+	#lightbox .aggroText {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	#lightbox .aggroProfileImage {
+		height: 30px;
+		width: 30px;
+		margin-right: 10px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	
+	#lightbox .aggroProfile span {
+		margin-left: 45px;
+		font-size: 18px;
+		margin-top: -25px;
+	}
+	#lightbox .aggroProfile span.screen-name {
+		margin-left: 45px;
+		font-size: 13px;
+		margin-top: -8px;
+	}
+	#lightbox .aggroText iframe {
+		height: 240px !important;
+	}
+
+	#lightbox .aggroText video {
+		height: 240px !important;
+	}
+	
+}
+
+#playbyplay_wrap {overflow-y: scroll;}
+
+#playbyplay_wrap .aggroItem {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 20px;
+	border: 0px solid #ccc;
+	margin: 1%;
+ 	font-family: sans-serif;
+	background: #fff;
+	max-width: 99%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+
+#playbyplay_wrap .aggroItem:nth-child(5n+0) {  
+
+}
+
+#playbyplay_wrap .aggroItem video {  
+	max-width: 100%;
+	height: auto;
+}
+.aggroImageHolder {
+	width: 220px;
+	height: 130px;
+	overflow: hidden;
+	float: left;
+	margin-right: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	border-radius: 3px;
+}
+
+#playbyplay_wrap .aggroItem .aggroPic img {  
+	max-width: 22%;
+	float: left;
+	margin-right: 20px;
+	height: auto;
+}
+.ytCard .aggroPic img, .ytplCard  .aggroPic img {
+	margin-top: -8%;
+
+}
+
+.aggroProfile {
+	margin: 0px 0px 0px 0px;
+	color: #222;
+	padding: 4px;
+	background: #transparent;
+}
+
+.aggroProfile a {
+	color: #222;
+	font-weight: bold;
+}
+
+.aggroProfile a:hover {
+	color: #555;
+	font-weight: bold;
+}
+
+.aggroProfile a span {
+    display: block;
+     line-height: 30px;
+     margin-left: 40px;
+     margin-top: -32px;
+}
+
+.aggroProfileImage {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+
+.aggroProfileLink {
+	float: left;
+}
+
+.aggroText {
+	padding: 10px;
+	display: block;
+	min-height: auto;
+	overflow: hidden;
+}
+.aggroDate {
+	text-align: right;
+	font-size: .95em;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+.aggroDate a {
+	color: #aaa !important;
+	font-size: .9em;
+	text-align: right;
+	padding: 0px 5px;
+}
+.aggroAdmin {display: none;}
+
+.aggroDate img{
+	height: 18px;
+	width: 18px;
+	margin-right: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	border-radius: 3px;
+}
+ 
+.aggroDate:after {
+  font-family: "aggro-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+} 
+ 
+.icon-video:before {
+   content: "V"; 
+} 
+ 
+.twCard .aggroDate:after {
+   content: "T"; 
+   color: #00ACED;
+} 
+
+.fbCard .aggroDate:after {
+   content: "F"; 
+   color: #3B5998;
+} 
+ 
+.igCard .aggroDate:after {
+   content: "i"; 
+   color: #675144;
+}
+
+.gpCard .aggroDate:after {
+   content: "g"; 
+   color: #dd4b39;
+}  
+ 
+.ytCard .aggroDate:after {
+   content: "Y"; 
+   color: #C4302B;
+} 
+
+.ytplCard .aggroDate:after {
+   content: "Y"; 
+   color: #C4302B;
+} 
+.rssCard .aggroDate:after {
+   content: "r"; 
+   color: #ff6600;
+} 
+
+.rssCard .aggroProfileLink img {display: none;}
+.rss-item-title {
+	font-weight: bold;
+	display: block;
+}
+
+@media only screen and (min-width: 768px) {
+	#aggro-container .aggroItem {
+		width: 100%;
+	}
+	#aggro-container .aggroItem:nth-child(5n+0) {  
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#aggro-container .aggroItem {
+		width: 100%;
+	}
+	#aggro-container .aggroItem:nth-child(5n+0) {  
+		width: 100%;
+	}
+	.aggroImageHolder {
+		float: none !important;
+		margin: 0 auto;
+	}
+	.aggroNoPic {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	#aggro-container .aggroItem {
+		width: 100%;
+	}
+	#aggro-container .aggroItem:nth-child(5n+0) {  
+		width: 100%;
+	}
+	.aggroImageHolder {
+		float: none !important;
+		margin: 0 auto;
+	}
+	.aggroNoPic {
+		display: none;
+	}
+}

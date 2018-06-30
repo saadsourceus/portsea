@@ -1,0 +1,208 @@
+
+
+/*  Top Header Tab
+--------------------------*/
+
+.header-top, .menu li li ,.menu li li li ,
+#nav-container,
+.widget_match_center,
+#sidebar .widget-title
+	{
+		background: ;
+	}
+
+.menu li li:hover
+	{
+		background:;
+	}
+.social-links li
+ {
+    
+    background: ;
+}
+.sb-icon-search
+ {
+	
+	color:!important;
+
+}
+.home #nav-container .main-nav li a:hover,
+.home #nav-container .main-nav .current_page_item a,
+.home #menu-panel .top-nav li a:hover,
+.news-title span, .page-title span,
+.page-title
+ {
+	
+	color:;
+}
+.menu li li a:hover,
+.page-title
+
+ {
+	
+	color:!important;
+
+}
+a, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 , a:hover{
+	color:;
+
+}
+.social-links li a{
+	
+	color:;
+}
+.social-links li:hover {
+	
+	background:;
+}
+
+li.slick-active {
+	
+	background: ;
+}
+
+.sb-search.sb-search-open .sb-icon-search, .no-js .sb-search .sb-icon-search , .header-top .sub-main-nav li a:hover , .home #nav-container .main-nav li li:hover  a {
+	
+	color:; 
+}
+
+.home #nav-container .main-nav li li a:hover {
+	
+   color:!important;
+}
+#nav-container .main-nav li a:hover, 
+#nav-container .main-nav .current_page_item a, 
+#menu-panel .top-nav li a:hover
+ {
+	 
+    color:!important;
+}
+/*  Match Center Tab
+--------------------------*/
+
+#match-centre-panel {
+	
+background: !important;
+}
+
+
+.home .widget_match_center .spdate,
+.home .widget_match_center .sp-match-link a,
+.home .widget_match_center .spteam1, 
+.home .widget_match_center .spteam2,
+.home .widget_match_center .spscore {
+	
+	color:;
+}
+
+#menu-panel .top-nav li a {
+	
+	color:;
+}
+
+*  Menu Tab
+--------------------------*/
+
+
+#menu-panel .top-nav li a {
+	
+	color:;
+}
+
+#menu-panel {
+
+background: !important;
+	
+}
+
+
+*  News Tab
+--------------------------*/
+
+
+.event_widget_row,
+.rpwe-block a,
+.acf-rpw-excerpt a
+{
+	
+	color:!important;
+	
+}
+
+.event_widget_row,
+.rpwe-block a,
+.acf-rpw-excerpt a
+ {
+	
+	color:!important;
+	
+}
+
+/* NPL  Color
+--------------------------*/
+
+.fixtures_box table th,
+#npl-panel .col-md-3 .statleader-block .leader-txt,
+#npl-panel .col-md-3 .statleader-table th,
+#npl-panel .more a ,
+#npl-panel .golden,
+#fixtures_lg_wrapper .col-md-3 .statleader-block .leader-txt
+
+{
+
+    background:!important;
+
+}
+#npl-panel .col-md-3 .statleader-block .statleader-nameblock .playerlink,
+#npl-panel .col-md-3 .statleader-table .sl-player a {
+	
+	color:;
+}
+
+
+/* Club Finder
+--------------------------*/
+
+#find-assoc {
+	
+	color:#da291c;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 200px)   {
+
+.js .main-nav .menu ,
+.js .main-nav .menu li 
+{
+ 
+    background-color: ;
+  }
+.js .main-nav .menu li a {
+
+  border-bottom: 1px solid ;
+ }
+ .js .main-nav .menu li a:hover {
+
+    color:!important;
+    background:!important;
+  }
+  .main-nav .menu li.current_page_item,
+		.menu .current_page_item a,
+		.menu .current-menu-item a {
+			background-color:;
+			color:!important;
+		}
+.home .js .main-nav .menu li a:hover {
+	
+	color: !important;
+}
+}
+
+
+
+
+
+
+
+
+
+

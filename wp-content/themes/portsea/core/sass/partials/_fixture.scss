@@ -1,0 +1,533 @@
+/* Match Center Design */
+
+
+.widget_match_center .spmatch {
+      
+    height: 104px;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 6px;
+    position: relative;
+    
+    overflow: hidden;
+    float: left;
+    background-color: #000;
+    border-radius: 5px;
+        @include breakpoint(md){
+            width: 225px;
+        }
+         @include breakpoint(sm){
+            width: 195px;
+        }
+    }
+     .widget_match_center .spmatch-title {
+
+            display: block!important;
+            width: 100%;
+            clear: both;
+            text-indent: 7px;
+            border-radius: 0;
+            background-color: #333;
+            border-radius: 0px;
+            padding: 0 2px;
+            float: left;
+            width: 100%;
+    }
+    .widget_match_center .spdate {
+        float: left;
+        font-size: 11px;
+        color: #fff;
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 600;
+    }
+    .sp-match-link.teamslink {
+        display: none;
+    }
+    .widget_match_center .sp-match-link {
+        float: right;
+        font-size: 10px;
+        background-color: #333333;
+    }
+    .widget_match_center .sp-match-link a {
+        text-transform: uppercase;
+        font-size: 10px;
+        background-color:#333333;
+        font-size: 11px;
+        color: #fff;
+        padding-right: 5px;
+    }
+    /* Match Center team /score info */
+    #mc-game-wrap , #mc-game-wrap1 , #mc-game-wrap2 , #mc-game-wrap3, #mc-game-wrap4 {
+        display: inline;
+        float: left;
+        margin: 0 5px 0 0;
+        overflow: hidden;
+        width: 80%;
+        height: 105px;
+        margin-top: -30px;
+        margin-left: 35px;
+        width: 80%;
+         @include breakpoint(md){
+           width:80%
+         }
+        @include breakpoint(sm){
+           width:75%
+         }
+    }
+  
+    #mc-game-content , #mc-game-content1, #mc-game-content2 , #mc-game-content3, #mc-game-content4 {
+        width: 2000px;
+    }
+    #spnext, #spprev {
+            top: 57px;
+            width: 40px;
+            height: 106px; 
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            border-radius: 0px;
+            background: rgba(0, 0, 0, 0.28);
+            border: 0;
+            border-radius: 3px;
+            font-size: 0;
+             @include breakpoint(xs){
+                top: 99px;
+             }
+        
+    }
+    #spprev { /* previous arrow */
+    float:left;
+    margin: 0 3px 0 7px;
+    position: absolute;
+   
+    
+    text-align: center;
+    font-size: 0px;
+    left: 0px;
+    /*top: 100px;*/
+
+   /* top: -5px;*/
+    }
+    #spnext {
+    margin: 0 7px 0 3px;
+    position: absolute;
+   
+    
+    text-align: center;
+    font-size: 0px;
+    
+     @include breakpoint(md){
+         right:13%;
+     }
+     @include breakpoint(sm){
+         right:16%;
+     }
+     @include breakpoint(xs){
+         right:0;
+     }
+ 
+ 
+  
+    }
+    #spprev:before, #spnext:before {
+          /*border-style: solid;
+          border-style: solid;*/
+
+          display: inline-block;
+          height: 0;
+          width: 0;
+          margin-top: 43px;
+          margin-left: -7px;
+    }
+    #spprev:before {
+          content: "\f053";
+          font: normal normal normal 14px/1 FontAwesome;
+          color: #FFF;
+   
+    }
+    #spnext:before {
+    
+        content: "\f054";
+          font: normal normal normal 14px/1 FontAwesome;
+          color: #FFF;
+    }
+   
+    .widget_match_center .spversus {
+        color: #000;
+        font-size: 11px;
+        line-height: 1px;
+        display: none;
+    }
+    .widget_match_center .spversus:before {
+        content:"";
+        margin-right: 4%;
+        width: 77%;
+        height: 1px;
+        background: #D1D1D1;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .widget_match_center .spscore {
+            position: absolute;
+    top: 27px;
+    right: 9px;
+    text-align: right;
+    line-height: 30px;
+    font-size: 13px;
+    color: #999;
+    font-weight: bold;
+    }
+    .widget_match_center .team2score, .widget_match_center .team1score {
+        display: block;
+    }
+    .widget_match_center .scoredivider {
+        display: none;
+    }
+    .widget_match_center .sp-fix-link a, .widget_match_center .sp-lad-link a, .widget_match_center .sp-stat-link a {
+
+            color: #fff;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            padding: 3px 10px;
+            border: 0px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            display: block;
+            text-transform: uppercase;
+            clear: both;
+            background-color: #fff;
+            font-family: 'Anton';
+            font-size: 12px;
+            text-transform: uppercase;
+            color: $green;
+            border-radius: 3px;
+            -webkit-font-smoothing: auto;
+             @include breakpoint(md){
+                font-size:14px;
+              }  
+              @include breakpoint(xs){
+                font-size:15px;
+              }  
+     
+    }
+
+
+.widget_match_center .sp-match-link img.emoji {
+
+    display:none!important;
+}
+div#match-center-top {
+    
+    z-index: 200;
+    position: relative
+}
+
+#match-center .spmatchname {
+
+   display:none;
+}
+
+#sp-comp-links {
+
+    display: block !important;
+    
+    width: auto;
+    right: 23px;
+    clear: both;
+    margin-top: -16px;
+    @include breakpoint(md){
+        position: absolute;
+     }
+      @include breakpoint(sm){
+        position: absolute;
+     }
+     @include breakpoint(xs){
+        display: block !important;
+        width: auto;
+        text-align: -webkit-center;
+        clear: both;
+        padding-top: 30px;
+     }
+}
+.sp-fix-link , .sp-lad-link , .sp-stat-link {
+     display: block;
+      @include breakpoint(xs){
+            display: inline-block;
+      }
+}
+.sp-fix-link {
+    
+}
+.sp-lad-link {
+     
+}
+.sp-stat-link {
+ 
+}
+.sp-fix-link a:hover , .sp-lad-link a:hover , .sp-stat-link a:hover {
+
+    background-color: transparent;
+    color: #FFF;
+    border: 1px solid #FFF;
+   
+}
+
+.fixture-sec .select-box
+{
+    text-align: right;     margin-top: 30px;
+}
+.fixture-sec select , #sblock4_dropdown
+{
+      color: #FFF;
+     height: 37px;
+      -webkit-appearance: none;
+      background:rgba(0, 0, 0, 0.3) url('../images/select-down.png') no-repeat center right;
+      background-size:30px;
+    padding: 1px 13px;
+   
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    z-index: 9999;
+    top: 50px;
+    font-weight:bold;
+    font-family: 'Open Sans',sans-serif !important;
+    top: 65px;
+    border: 1px solid rgba(204, 204, 204, 0.43);
+    font-size: 13px;
+    @include breakpoint(md){
+         width: 330px;
+    }
+    @include breakpoint(sm){ 
+         width: 350px;
+    }
+    
+     @include breakpoint(xs){
+         width: 300px;
+        background-size:30px;
+        border-color: #ccc;
+        top: 46px;
+        left: 18px;
+     }
+      @include breakpoint(xxs){
+         top: 38px;
+         left: 18px;
+          width: 80%;
+    }
+     
+}
+#sblock4_dropdown {
+
+    top:7px;
+}
+.fixure-slider {
+     background: $green;
+   
+    border-radius: 2px;
+    padding: 66px 20px;
+    height: 181px;
+    position: relative;
+    z-index: 999;
+    clear: both;
+    @include breakpoint(xs){
+        height: 226px;
+        padding: 110px 20px;
+
+    }
+}
+ .spcompname  {
+
+        display: block!important;
+        position: relative;
+        float: left;
+        width:100%;
+        color: #FFF;
+        left: -5px;
+       
+        font-weight: 100;
+       
+        top: -47px;
+        text-transform: uppercase;
+          -webkit-font-smoothing: antialiased;
+        letter-spacing: 1px;
+        font-family: 'Anton';
+        font-size: 24px;
+        color: #fff;
+       
+         margin: 0;
+         @include breakpoint(xs){
+                font-size: 21px;
+     }
+      @include breakpoint(xxs){
+                font-size: 15px;
+     }
+         
+}
+.spcompname {
+
+    display: none;
+}
+.sproundname {
+
+    display: none!important;
+    position: relative;
+    top: -20px;
+    color: #505a5a;
+    font-weight: bold;
+    left: auto;
+    font-size: 13px;
+   
+}
+.sproundname:before {
+
+    content: " | ";
+    position: relative;
+}
+.comp-name {
+
+    display: none;
+}
+
+.spladder  {
+       width: 100%;
+    background: #000;
+    color: #FFF;
+}
+.spladder tr th:first-child {
+
+    padding-left:15px;
+    font-weight: 100;
+        width: 50%;
+}
+    
+
+.spladder tr th {
+
+    font-weight: bold;
+    width: 30px;
+    padding: 10px 0 10px 15px;
+    font-size: 12px;
+    font-family: 'robotoregular';
+    text-transform: uppercase;
+    padding-left: 0px;
+}
+.spladder tr:first-child {
+
+    background:#d21126;
+    color: #FFF;
+    font-weight: 100;
+    height: 30px;
+    
+}
+.sproweven td:first-child, .sprowodd td:first-child {
+
+    padding-left: 15px;
+    padding: 10px 0 10px 15px;
+    font-size: 12px;
+    font-family: 'robotoregular';
+    text-transform: uppercase;
+        
+}
+
+.spteam1, .spteam2 {
+    color: #FFF;
+    width: 85%;
+    float: left;
+    margin-top: 12px;
+    height: 22px;
+    font-size: 12px;
+    font-weight:600;
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    margin-left: 10px;
+}
+
+.sptime, .spvenue {
+    display:none;
+}
+.spteams {
+    /* color: #0065A4; */
+    display: block !important;
+    float: left;
+    font-weight:bold;
+    font-size: 14px;
+    line-height: 13px;
+    margin-left: 5px;
+   
+    visibility: visible !important;
+}
+ .widget_match_center .sp-fix-link a, .widget_match_center .sp-lad-link a, .widget_match_center .sp-stat-link a {
+       
+        margin-left: 7px;
+        margin-top: 8px;
+        border: 1px solid #FFF;
+       
+    }
+.fixture-sec {
+    
+     @include breakpoint(md){
+        min-height: 180px;
+     }
+    @include breakpoint(xs){
+        min-height: 265px;
+     }
+     @include breakpoint(xxs){
+        min-height: 290px;
+     }
+      @include breakpoint(xxxs){
+        min-height: 285px;
+     }
+   
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    @include breakpoint(xs){
+        padding: 7px 7px !important;
+     }
+      @include breakpoint(xxs){
+        padding: 3px 5px !important;
+        font-size: 11px;
+        text-transform: capitalize;
+        font-weight: 600;
+     }
+     @include breakpoint(xxxs){
+        font-size: 10px;
+     }
+}
+.fixture-sec h3
+{
+    font-size: 30px;
+    color: #505a5a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: -8px;
+    margin-bottom: 30px;
+   
+}
+.ui-tabs .ui-tabs-panel, .ui-tabs .ui-tabs-nav {
+        padding: 0 !important;
+}
+.ui-widget-header, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+        background: transparent !important;
+        border:none !important;
+}
+.ui-widget-header {
+    background:transparent;
+    border:none;
+}
+.ui-widget.ui-widget-content {
+    border: none !important;
+    background: transparent;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color:#fff !important;    
+    font-weight: bold;
+    text-transform:uppercase;
+    outline: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+        border: 1px solid $green !important;
+    background: $green !important;
+}

@@ -1,0 +1,27 @@
+/* line 1, sass/partials/_editor-styles.scss */
+.yellow-heading {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f7941d;
+  font-size: 26px;
+}
+
+/* line 6, sass/partials/_editor-styles.scss */
+.blue-heading {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #0c5b9e;
+  font-size: 26px;
+}
+
+
+h2 {
+  color: red;
+}
+

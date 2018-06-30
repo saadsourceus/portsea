@@ -1,0 +1,121 @@
+.social-hub {
+    h3 {
+        color:#fff;
+    }
+}
+.social-sub {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+#social-hub-panel .panel-content {
+     @include breakpoint(xs){
+        background:#0d2241 !important;
+     }
+}
+.social-hub 
+{
+        padding-bottom: 87px;
+          @include breakpoint(xs){
+            padding-bottom: 0;
+          }
+        .desktop-social {
+            display:block;
+             @include breakpoint(mini){
+                display:none;
+      }
+        }
+    .mobile-social { display:none;
+        @include breakpoint(mini){
+                display:block;
+      }
+    }
+    .aggroPic img {
+        height: 250px;
+        width: 100%;
+    }
+    .aggroText a {
+        color:#000;
+        font-family: 'Open Sans',sans-serif;
+    }
+    .aggroText {
+       padding-top: 10px;
+        color: #000;
+        font-family: 'Open Sans',sans-serif;
+        font-size: 13px;
+    }
+    img.aggroProfileImage {
+        border: 1px solid #ccc;
+        padding: 4px;
+    }
+    #aggro-container .aggroItem {
+        background-color: #fff;
+        border: 0 none;
+        border-radius: 0;
+        margin: 0 0.3% 8px;
+        float: left;
+        width: 23.133333%;
+        min-height: 320px;
+        border-radius: 4px;
+        position: relative; 
+        padding: 12px;
+        @include breakpoint(xs){
+             width: 100%;
+       }
+       @include breakpoint(sm){
+             min-height: 264px;
+       }
+        @include breakpoint(md){
+             min-height: 320px;
+       }
+    }
+    .aggroAdmin, .aggroDate { display:none;}
+    .aggroProfile a {
+        color:#000;
+            font-weight: 600;
+    }
+    .aggroProfile span {
+        padding-left: 8px;
+    }
+    .aggroProfile {
+        padding-bottom: 10px;
+    }
+    .counter-wrap {
+        margin: 46px 0;
+        background: rgba(0, 0, 0, 0.39);
+        position: absolute;
+        top: 83%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 35px;
+         @include breakpoint(xs){
+             position: relative;
+             background:none;
+             margin:0;
+          }
+     }
+    .aggro_count {
+        float: none;
+        display: inline-block;
+        padding: 9px 25px 17px;
+    }
+    .aggro_count .aggro_count_total {
+        font-weight: bold;
+        margin-right: 11px;
+        font-family: 'Open Sans Regular';
+        font-size: 24px;
+    }
+    .aggro_count_type {
+           font-family: 'Open Sans',sans-serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 100;
+    }
+    .aggro_count {
+        margin:0;
+    }
+
+}
